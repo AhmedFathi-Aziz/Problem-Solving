@@ -10,4 +10,11 @@
     Time Complexity of Bubble Sort:   Best:            Average        Worst
                                       O(n)              O(n^2)        O(n^2)
 
+    Important:
+    " when you pass an argument to a function you shoud pass it by reference "
+
+    Ex: void convert(string &word) {}
+
+    Important:
+    test your code before you submit it
 */
