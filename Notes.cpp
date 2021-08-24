@@ -18,4 +18,16 @@
     Important:
     test your code before you submit it
     you should handle all the test cases
+    read the problem more than one and make sure you understand everything
+
+    Be Calm
+    " Not everything is sorting "
+
+    Two Pointers is Important
+    11 Problems
+
+
+    Day2:
+
+    
 */

@@ -6,18 +6,18 @@ int main()
     int n; cin >> n;
     string word; cin >> word;
 
-    int anton = 0, danic = 0;
+    int anton = 0, danik = 0;
     for (int i = 0; i < word.length(); i++)
     {
         if (word[i] == 'A')
             anton++;
         else 
-            danic++;
+            danik++;
     }
 
-    if (anton > danic)
+    if (anton > danik)
         cout << "Anton" << endl;
-    else if (anton < danic)
+    else if (anton < danik)
         cout << "Danik" << endl;
     else
         cout << "Friendship" << endl;           
