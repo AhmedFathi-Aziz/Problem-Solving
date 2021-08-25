@@ -24,10 +24,19 @@
     " Not everything is sorting "
 
     Two Pointers is Important
-    11 Problems
-
+    "11 Problems"
 
     Day2:
+
+    if you need the shortest path between the alphabets you can move
+    with the counterclockwise
+
+    if the difference > 13 you should subtract the abs(answer) from 26
+    
+    EX:
+    if we need the shortest path between 'a' and 'z' so we can move with 
+    the counterclockwise from 'z' to 'a' the difference is 122 - 97 = 25 (clockwise)
+    (26 - 25) = 1 move (counterclockwise)
 
     
 */
