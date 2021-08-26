@@ -10,6 +10,11 @@
     Time Complexity of Bubble Sort:   Best:            Average        Worst
                                       O(n)              O(n^2)        O(n^2)
 
+*/ 
+
+
+
+ /*
     Important:
     " when you pass an argument to a function you shoud pass it by reference "
 
@@ -25,7 +30,11 @@
 
     Two Pointers is Important
     "11 Problems"
+*/
 
+
+
+/*
     Day2:
 
     if you need the shortest path between the alphabets you can move
@@ -38,5 +47,22 @@
     the counterclockwise from 'z' to 'a' the difference is 122 - 97 = 25 (clockwise)
     (26 - 25) = 1 move (counterclockwise)
 
+    Day3:
     
+    Important:
+    if we have an array with 10 element numbered from 1 to n from left to right
+    and we remove one element from position "y"
+    and we need to know the number of element on the left and elements on the right
+
+    the number of element in the left corner -> (y - 1)
+    the number of element on the right corner -> (length - y)
+
+    EX:
+    1  2  3  4  5  6  7  8  9  10
+    we remove the element on the position 5 (1 based)
+    the elements on the left corner = (y - 1) = (5 - 1) = 4 elements
+    the elements on the right corner = (length - y) = (10 - 5) = 5 elements
+
+    the result:
+    1  2  3  4  x  6  7  8  9  10
 */
