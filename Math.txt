@@ -1,0 +1,50 @@
+/*
+    Day1:
+
+    minimum number of shovels:
+    (numberOfShovels * price % 10 == 0) || (numberOfShovels * price % 10 == coin)
+
+    Important:
+    probability of an event = number of ways it can happen / total number of outcomes
+
+    be careful with the overflow
+*/
+
+
+/*
+    UVA light, more light
+    if n == 10
+
+    he toggle the switch on the 1, 2, 5 and 10 -> the factors of 10
+
+    intialy the bulb is off and if n == 10 we have four factors (even number)
+
+    at factor 1 -> on
+    at factor 2 -> off
+    at factor 3 -> on
+    at factor 4 -> off
+
+
+    if n == 4
+
+    he toggle the switch on the 1, 2 and 4 -> the factors of 4
+    we have 3 factors (odd number)
+
+    at factor 1 -> on
+    at factor 2 -> off
+    at factor 3 -> on
+
+    so if the numbe of factors of n is even the last bulb is off
+    otherwise is on
+
+    so we need to know the factors of n
+    the number of factors of any number is even but, if the number is sqrt so the factors of it is odd
+
+    10
+    1 * 10
+    2 * 5
+
+    4
+    1 * 4
+    2 * 2
+*/
