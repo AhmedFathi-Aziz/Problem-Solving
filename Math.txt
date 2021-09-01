@@ -57,3 +57,22 @@
 
 */
 
+/*
+   
+    The Idea of Efficient Exponentiation (Power)
+
+    A^p = A^p-1 * A (if p is odd)
+    A^p = (A^p/2)^2 (if p is even)
+
+    O(log(p))
+
+*/
+
+/*
+
+  sum of even numbers from 1 to n
+  number of even number * (number of even number + 1)
+
+  sum of odd number from 1 to n
+  number of odd numbers * pow(number of odd numbers, 2)
+*/
