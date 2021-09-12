@@ -93,3 +93,59 @@
 
   n = 360 / (180 - a)
 /*
+
+/*
+
+  if we need to obtain an array where any two neighboring elements would be distinct in a finite time
+
+  1 -> ok
+
+  1 2 -> ok
+
+  1 1 2 -> ok -> 1 2 1
+
+  1 1 1 -> we need 2 numbers between 1 1 1 so -> 1 2 1 2 1
+  and so on
+
+  for c numbers we need to have c - 1 numbers between
+  if (n >= c + c - 1)
+  if (n >= 2*c-1) -> ok
+  else -> no
+
+*/
+
+/*
+   if we subtract the min form max
+   we keep the common factors between them
+
+     30            45
+    2*3*5         3*3*5
+
+     30            15
+    2*3*5          3*4
+
+     15            15 
+    3*5            3*5
+
+   we keep the factors 3*5 = 15 = gcd(30, 45)
+
+
+
+   a = bq + r
+
+   gcd(a, b) = gcd(b, a%b)
+
+*/
+
+/*
+  we need the number of trailing zero in a factorial of number
+
+  every time we multiply a number with 10 the number of trailing zero increment
+
+  10! = 1 * 2 * 3 * 4 * 5 * 6 * * 7 * 8 * 9 * 10 = 3628800 with two zero
+  because we have 2 (10) in this number -> (2 * 5), (10)
+  we can divide the numebr by pow(5, i) and i start from 1 and increment it
+  we stop when pow(5, i) >= number 
+
+*/
+
