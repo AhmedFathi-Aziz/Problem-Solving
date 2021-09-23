@@ -16,4 +16,21 @@ using namespace std;
 int main()
 {
 	ACM
+    int cases, index;
+    cin >> cases >> index;
+    
+    int answer = 0;
+    vector <int> cities(cases + 1);
+    for (int i = 1; i <= cases; i++) {
+        cin >> cities[i];
+        answer += cities[i];
+    }
+    
+    for (int i = 1; i < index && i <= cases - index ; i++) 
+    {
+        if (cities[index + i] + cities[index - i] == 1)
+            answer--;
+    }
+
+    cout << answer << endl;
 }
