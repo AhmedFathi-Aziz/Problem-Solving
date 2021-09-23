@@ -153,7 +153,7 @@ public:
         return -1;
     }
 
-    void push_back(var value)
+    void push_back(var value) // time -> amortized O(1)
     {
        if (size == capacity)
             expand_capacity();
