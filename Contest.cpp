@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iomanip>
+#include <fstream>
 #include <algorithm>
 #include <assert.h>
 #include <string>
@@ -8,7 +10,7 @@
 #include <queue>
 #include <stack>
 #include <map>
-#include <unordered_map>
+#include <set>
 #define ll long long
 #define ACM ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
@@ -16,22 +18,11 @@ using namespace std;
 int main()
 {
 	ACM
-	int n, time, group, built;
-	cin >> n >> time >> group >> built;
+    int cases; cin >> cases;
+    while (cases--) {
+        int n; cin >> n;
 
-	int times = (n + group - 1) / group;
-    int in = times;
-    
-	int oven1 = 0, oven2 = built;
-	while (times--) {
-
-		if (oven1 < oven2)
-			oven1 += time;
-
-		else
-			oven2 += time;	
-	}
-
-	if (max(oven1, oven2) < in * time) cout << "YES" << endl;
-	else cout << "NO" << endl;
+        if (n % 2 == 0)
+            cout << n / 2 << "\n";
+        else cout << (n / 2) + 1 << "\n";    }
 }
